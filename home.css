@@ -25,15 +25,26 @@ body {
     box-shadow: 0px 0px 5px #ccc;
   }
 
+  #menu-button{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 10%;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+  }
+
   #hidden-menu{
     display: none;
+  }
+
+  .hidden-menu{
     position: fixed; /* torna o menu fixo na tela, mesmo quando o usuário rolar a página */
     left: 0; /* posiciona o menu no lado esquerdo da tela */
-    top: 0; /* posiciona o menu no topo da tela */
+    top: 10%; /* posiciona o menu no topo da tela */
     height: 100%; /* define a altura do menu como 100% da altura da tela */
     width: 20%; /* define a largura do menu como 200 pixels */
-    background-color: #496834; /* define a cor de fundo do menu */
-    
+    /*background-color: #496834;  define a cor de fundo do menu */  
   }
 
   .hidden-menu a {
