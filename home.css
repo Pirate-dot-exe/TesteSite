@@ -25,7 +25,7 @@ body {
     box-shadow: 0px 0px 5px #ccc;
   }
 
-  .hidden-menu{
+  #hidden-menu{
     display: none;
     position: fixed; /* torna o menu fixo na tela, mesmo quando o usuário rolar a página */
     left: 0; /* posiciona o menu no lado esquerdo da tela */
@@ -35,6 +35,7 @@ body {
     background-color: #496834; /* define a cor de fundo do menu */
     
   }
+
   .hidden-menu a {
       display: block;
       color: white;
