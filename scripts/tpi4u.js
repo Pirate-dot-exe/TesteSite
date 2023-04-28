@@ -1,4 +1,4 @@
-const carrossel = document.querySelector('.body carrossel');
+const carrossel = document.querySelector('.carrossel');
 const imgs = carrossel.querySelectorAll('img');
 let currentImg = 0;
 
