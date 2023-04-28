@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #49683486;
+  }
+
+#menu-button{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 10%;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+  }
+
+  #hidden-menu{
+    display: none;
+  }
+
+  .hidden-menu{
+    position: fixed; /* torna o menu fixo na tela, mesmo quando o usuário rolar a página */
+    left: 0; /* posiciona o menu no lado esquerdo da tela */
+    top: 10%; /* posiciona o menu no topo da tela */
+    height: 100%; /* define a altura do menu como 100% da altura da tela */
+    width: 20%; /* define a largura do menu como 200 pixels */
+    /*background-color: #496834;  define a cor de fundo do menu */  
+  }
+
+  .hidden-menu a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      background-color: rgb(43, 92, 61);
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+
+.carrossel{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.carrossel img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel img:nth-child(1){
+    transform: translateX(0)
+}
+
+.carrossel img:nth-child(2){
+    transform: translateX(100%)
+}
